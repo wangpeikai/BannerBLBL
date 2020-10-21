@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="b_point_tag_1">1</string>
+    <string name="b_point_tag_2">2</string>
+    <string name="b_point_tag_3">3</string>
+    <!--MainActivity-->
+    <string name="forward_to_banner">跳转Banner</string>
+    <!--BannerActivity-->
+    <string name="start_scroll">开始自循环</string>
+    <string name="stop_scroll">关闭自循环</string>
+
 </resources>

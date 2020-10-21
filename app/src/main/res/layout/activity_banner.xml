@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BannerActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/bViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dot_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/b_pager_point_margin_environment"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bViewPager"
+        app:layout_constraintEnd_toEndOf="@+id/bViewPager" />
+
+    <Button
+        android:id="@+id/btn_start_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bViewPager"
+        android:onClick="onButtonClick"/>
+
+    <Button
+        android:id="@+id/btn_stop_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_scroll"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_scroll"
+        app:layout_constraintTop_toBottomOf="@+id/bViewPager"
+        android:onClick="onButtonClick" />
+</androidx.constraintlayout.widget.ConstraintLayout>
